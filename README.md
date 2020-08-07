@@ -28,3 +28,8 @@ O NLW é uma experiência online com muito conteúdo prático, desafios e hacks 
   <li><a href="https://reactjs.org/"> React </a></li>
   <li><a href="https://reactnative.dev/"> React Native </a></li>
 </ul>
+
+### Versão 1.0.0
+<ul>
+  <li>Nova versão em andamento!</li>
+</ul>
