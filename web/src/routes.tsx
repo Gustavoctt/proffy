@@ -5,6 +5,9 @@ import Landing from './pages/Landing';
 import TeacherList from './pages/TeacherList';
 import TeacherForm from './pages/TeacherForm';
 
+//A milha extra
+import Login from './pages/Login';
+
 
 function Routes(){
     return(
@@ -12,6 +15,8 @@ function Routes(){
             <Route path="/" component={Landing} exact/>
             <Route path="/study" component={TeacherList} />
             <Route path="/give-classes" component={TeacherForm} />
+
+            <Route path="/login" component={Login} />
         </BrowserRouter>
     );
 }
