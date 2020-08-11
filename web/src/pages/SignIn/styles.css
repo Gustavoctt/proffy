@@ -1,0 +1,178 @@
+#page-login-content{
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    background: var(--color-background);
+}
+
+#page-login-content .container{
+    width: 100vw;
+    height: 50vh;
+    background: var(--color-primary);
+}
+
+#page-login-content .container img{
+    margin-top: 10rem;
+}
+
+#page-login-content .container h2{
+    color: var(--color-text-complement);
+}
+
+#page-login-content form{
+    padding: 5rem;
+}
+#page-login-content form h2{
+    font: 700 2.4rem Archivo;
+    line-height: 4.6rem;
+    margin-top: 5.0rem;
+    color: var(--color-text-title);
+}
+
+#page-login form fieldset{
+    border: 0;
+    padding: 0;
+}
+
+#page-login form .more-form{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-top: 3.2rem;
+}
+
+#page-login form .more-form .find-password{
+    font: 700 1.6rem Poppins;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#page-login form button{
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-primary-button);
+    color: var(--color-text-complement);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 3.2rem;
+}
+
+#page-login footer{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-top: 6.2rem;
+}
+
+#page-login footer .cad-new-user{
+    font: 700 1.6rem Poppins;
+    color: var(--color-primary);
+    transition: color 0.2s;
+}
+
+#page-login footer .cad-new-user:hover,
+#page-login form .more-form .find-password:hover{
+    color: var(--color-primary-darker);
+}
+@media(min-width: 700px){
+    #page-login-content{
+        width: 100vw;
+        height: 100vh;
+
+        display: grid;
+        grid-template-rows: 600px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "logo logo form";
+    }
+
+    #page-login-content .container{
+        height: 100vh;
+        width: 100vw;
+        padding-left: 10rem;
+    }
+
+    #page-login-content .container .logo-container img{
+        width: 50%;
+    }
+
+    #page-login-content .container .logo-container h2{
+        font-size: 2.4rem;
+    }
+    .logo-container{
+        grid-area: logo;
+        align-self: center;
+        text-align: left;
+        margin-top: 15rem;
+    }
+
+    #page-login-content form{
+        margin-right: 10rem;
+    }
+
+    #page-login-content form h2{
+        font-size: 3.2rem;
+        margin-bottom: 1.0rem;
+    }
+
+    .form-login{
+        width: 60rem;
+        margin-top: 5rem;
+        grid-area: form;
+    }
+    
+    
+}
+
+/*
+
+#page-login-content form .form-login{
+    background:var(--color-primary-button); ;
+}
+
+
+
+
+
+@media(min-width: 700px){
+    #page-login-content {
+        max-width: 1100px;
+
+        display: grid;
+        grid-template-rows: 700px 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: "logo logo form";
+    }
+
+    .hero-image{
+        grid-area: logo;
+        align-self: center;
+        text-align: left;
+        margin: 0;
+    }
+
+    .image-principal img{
+        height: 100%;
+    }
+
+    .form-login{
+        width: 40rem;
+        margin-top: 10rem;
+        grid-area: form;
+        justify-self: end;
+    }
+
+    #page-login footer{
+        margin-top: 20rem;
+    }
+
+}
+*/
