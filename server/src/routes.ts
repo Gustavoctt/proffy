@@ -4,8 +4,8 @@ import ConnectionController from './controllers/ConnectionsController';
 import UserController from './controllers/UsersController';
 import SessionController from './controllers/SessionsController';
 
-
 const routes = express.Router();
+
 const classesController = new ClassesController();
 const connectionsController = new ConnectionController();
 const userController = new UserController();
