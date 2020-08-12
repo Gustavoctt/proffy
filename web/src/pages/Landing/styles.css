@@ -1,4 +1,4 @@
-#page-landing{
+#page-landing {
     width: 100vw;
     height: 100vh;
 
@@ -7,77 +7,86 @@
     align-items: center;
 
     color: var(--color-text-in-primary);
-    background: var(--color-primary);
+    background-color: var(--color-primary);
 }
 
-.logo-container img{
-    height: 10rem;
+#page-landing-content span button{
+    margin-left: 0.8rem;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--color-text-in-primary);
+    background: none;
+    border: 0;
 }
 
-.hero-image{
+.hero-image {
     width: 100%;
 }
 
-.logo-container{
+.logo-container img {
+    height: 10rem;
+}
+
+.logo-container {
     text-align: center;
     margin-bottom: 3.2rem;
 }
 
-.logo-container h2{
+.logo-container h2 {
     font-weight: 500;
     font-size: 2.4rem;
     line-height: 4.6rem;
     margin-top: 0.8rem;
 }
 
-.buttons-container{
+.buttons-container {
     display: flex;
     justify-content: center;
     margin: 3.2rem 0;
 }
 
-.buttons-container a{
+.buttons-container a {
     width: 30rem;
     height: 10.4rem;
     border-radius: 0.8rem;
+    margin-right: 1.6rem;
     font: 700 2.0rem Archivo;
-    
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-decoration: none;
-    color: var(--color-button-text );
-
+    color: var(--color-button-text);
     transition: background-color 0.2s;
 }
 
-.buttons-container a:first-child{
-    margin-right: 1.6rem;
-}
-
-.buttons-container a img{
+.buttons-container a img {
     width: 4rem;
     margin-right: 2.4rem;
 }
 
-.buttons-container a.study{
+.buttons-container a.study {
     background: var(--color-primary-lighter);
 }
 
-.buttons-container a.give-classes{
+.buttons-container a.give-classes {
     background: var(--color-secundary);
 }
 
-.buttons-container a.study:hover{
+.buttons-container a.study:hover {
     background: var(--color-primary-light);
 }
 
-.buttons-container a.give-classes:hover{
+.buttons-container a.give-classes:hover {
     background: var(--color-secundary-dark);
 }
 
-.total-connections{
+.total-connections {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logged-as{
     font-size: 1.4rem;
 
     display: flex;
@@ -85,24 +94,28 @@
     justify-content: center;
 }
 
+.logged-as img{
+    margin-left: 0.8rem;
+}
+
 .total-connections img{
     margin-left: 0.8rem;
 }
 
-@media(min-width: 1100px){
-    #page-landing-content{
+@media (min-width: 1100px) {
+    #page-landing-content {
         max-width: 1100px;
-
         display: grid;
-        grid-template-rows: 350px 1fr;
+        grid-template-rows: 350px 1fr 0.2fr;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas: 
             "logo hero hero"
             "buttons buttons total"
-            ;
+            "footer footer footer"
+        ;
     }
 
-    .logo-container{
+    .logo-container {
         grid-area: logo;
         align-self: center;
         text-align: left;
@@ -125,7 +138,7 @@
 
     .buttons-container{
         grid-area: buttons;
-        justify-content: flex-start;
+        justify-content: flex-start
     }
 
     .buttons-container a{
@@ -136,5 +149,8 @@
         grid-area: total;
         justify-self: end;
     }
-
+    .logged-as{
+        grid-area: footer;
+        text-align: center;
+    }
 }

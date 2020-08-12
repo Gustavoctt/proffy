@@ -1,17 +1,17 @@
 import Knex from 'knex';
 
-//knex:migrate -> Cria a tabela
 export async function up(knex: Knex){
-    return knex.schema.createTable('users', table => {
+    return knex.schema.createTable('accounts', table =>{
         table.increments('id').primary();
-        table.string('name').notNullable();
+        table.string('username').notNullable();
+        table.string('email').notNullable();
+        table.string('password').notNullable();
         table.string('avatar').notNullable();
         table.string('whatsapp').notNullable();
         table.string('bio').notNullable();
-    });
+    })
 }
 
-//knex:migrate:rollback -> Volta a tras
 export async function down(knex: Knex){
-    return knex.schema.dropTable('users');
+    return knex.schema.dropTable('accounts');
 }
